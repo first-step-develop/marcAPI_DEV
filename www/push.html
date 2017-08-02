@@ -1,0 +1,79 @@
+<ons-page id="push">
+
+    <!-- 設定ボタン -->
+    <ons-fab position="bottom right" onclick="loadPushSetting()">
+        <ons-icon icon="fa-cog"></ons-icon>
+    </ons-fab>
+
+    <!-- ツールバー -->
+    <ons-toolbar>
+        <div class="right">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          プッシュ通知
+        </div>
+    </ons-toolbar>
+    
+    <!-- ボディ -->
+    
+    <!-- lazyload -->
+    <ons-list id="lazy_list">
+        <ons-lazy-repeat id="lazy_pushes"></ons-lazy-repeat>
+    </ons-list>
+    
+    <!-- 取得件数0表示 -->
+    <div id="push_isempty" hidden>
+        <span>プッシュ通知がありません</span>
+    </div>
+    
+    <!-- テンプレート -->
+    <div hidden>
+    <ons-list class="push-list">
+    
+        <ons-list-item id="push_template" class="push-list-item" modifier="material">
+            <ons-row class="push-row">
+            
+                <!-- 店舗情報 -->
+                <ons-col width="100px" class="push-left">
+                    <div class="shop-info">
+                        <!-- 店舗名 -->
+                        <div class="shop-nmj">店舗名</div>
+                        <!-- 店舗リンク -->
+                        <div class="shop-link">店舗リンク</div>
+                    </div>
+                </ons-col>
+                
+                <!-- 仕切り -->
+                <ons-col width="2px" class="push-center">
+                </ons-col>
+                
+                <!-- プッシュ情報 -->
+                <ons-col class="push-right">
+                    
+                    <!-- 削除ボタン -->
+                    <div class="push-btn-delete">
+                        <ons-button class="btn-delete" modifier="quiet">
+                            <ons-icon icon="close" size="15px">
+                                <span style="font-size:12px; padding-right:5px">削除</span>
+                            </ons-icon>
+                        </ons-button>
+                    </div>
+                    
+                    <!-- プッシュタイトル -->
+                    <div class="push-title">タイトル</div>
+                    <!-- プッシュ本文 -->
+                    <div class="push-body">本文です</div>
+                    <!-- プッシュ画像 -->
+                    <img class="push-img" src="">
+                    
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+        
+    </ons-list>
+    </div>
+    
+</ons-page>

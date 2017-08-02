@@ -1,0 +1,122 @@
+<ons-page id="post">
+    <!-- ツールバー -->
+    <ons-toolbar>
+        <div class="right">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          投稿閲覧
+        </div>
+    </ons-toolbar>
+    <div class="header">
+        <!-- 検索ボックス -->
+        <form class="search_form">
+            <ons-input type="search" value="" class="search-input" style="width:100%;"></ons-input>
+        </form>
+        
+        <!-- 表示方法選択タブ -->
+        <div class="tab_wrap">
+            <div class="tab new">新着順</div>
+            <div class="tab own">自分の投稿</div>
+        </div>
+    </div>
+    <!-- 新規投稿ボタン -->
+    <ons-fab position="bottom right" onclick="loadPostAdd()">
+        <ons-icon icon="fa-pencil"></ons-icon>
+    </ons-fab>
+    
+    <!-- 投稿表示部 -->
+    <div class="body">
+        
+        <!-- 再読み込みボタン -->
+        <div class="reload" hidden>
+            <ons-button modifier="cta" onclick="loadPost()">再読込</ons-button>
+        </div>
+        
+        <!-- 取得件数0表示 -->
+        <div id="post_isempty" hidden>
+            <span>表示できる投稿がありません</span>
+        </div>
+        
+        <!-- lazyload -->
+        <ons-list id="lazy_list">
+            <ons-lazy-repeat id="lazy_repeat"></ons-lazy-repeat>
+        </ons-list>
+        
+        <!-- テンプレート -->
+        <div hidden>
+            <ons-list>
+                <ons-list-item id="post_template" class="post_wrap" modifier="longdivider">
+                    <div style="width:100%;">
+                    
+                        <!-- 写真 -->
+                        <ons-carousel initial-index="0" centered swipeable auto-scroll auto-scroll-ratio="0.5" item-width="200px">
+                            <ons-carousel-item>
+                                <div style="display:table-cell;text-align:center;vertical-align:middle;height:150px;width:200px;background-color:silver;">
+                                        <img class="loading" src="img/loading.gif" width="32px" height="32px"/>
+                                </div>
+                            </ons-carousel-item>
+                        </ons-carousel>
+                    </div>
+                    
+                    <!-- コメント他 -->
+                    <div class="post-text-wrap">
+                        <div class="author">
+                            <span class="title">投稿者:</span>
+                            <span class="name"></span>
+                        </div>
+                        <div class="category">
+                            <span class="title">カテゴリ:</span>
+                            <span class="name"></span>
+                        </div>
+                        <div class="tdf">
+                            <span class="title">地域:</span>
+                            <span class="name"></span>
+                        </div>
+                        <p class="comment"></p>
+                    </div>
+                    
+                    <!-- ボタン -->
+                    <div class="post-footer">
+                        <span class="like">
+                            <ons-button class="button" modifier="quiet">
+                                <ons-icon icon="thumbs-o-up">
+                                    <span class="text">100</span>
+                                </ons-icon>
+                            </ons-button>
+                        </span>
+                        <span class="operation">
+                            <ons-button class="button edit" modifier="quiet">
+                                <ons-icon icon="edit">
+                                    <span class="text">編集</span>
+                                </ons-icon>
+                                </ons-button>
+                            <ons-button class="button delete" modifier="quiet">
+                                <ons-icon icon="close">
+                                    <span class="text">削除</span>
+                                </ons-icon>
+                            </ons-button>
+                            <ons-button class="button report" modifier="quiet">
+                                <ons-icon icon="bullhorn">
+                                    <span class="text">通報</span>
+                                </ons-icon>
+                            </ons-button>
+                        </span>
+                    </div>
+                </ons-list-item>
+            </ons-list-item>
+        </div>
+    </div>
+    
+    <!-- 次の○○件読み込み -->
+    <div id="post_next" onclick="loadAdditionalPosts()" hidden>
+        <span></span>
+    </div>
+    
+    <!-- 追加読み込み時のロード表示 -->
+    <div id="post_next_loading" hidden>
+        <ons-progress-circular indeterminate></ons-progress-circular>
+    </div>
+</ons-page>

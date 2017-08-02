@@ -1,0 +1,42 @@
+#post_add_edit .image_button{
+    width:100%;
+    margin-bottom: 10px;
+}
+#post_add_edit .image_view{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    min-height: 150px;
+}
+#post_add_edit .message{
+    margin-left:10px;
+    font-size: 10px;
+}
+#post_add_edit .error{
+    margin-left:10px;
+    font-size:10px;
+    color: red;
+}
+#post_add_edit .trim{
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: black;
+    margin:1px;
+}
+#post_add_edit .trim img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+#post_add_edit .trim .fab--top__right{
+    top: 0px !important;
+    right: 0px !important;
+    transform: scale(0.6) !important;
+}

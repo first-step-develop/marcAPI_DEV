@@ -1,0 +1,38 @@
+
+/* リストヘッダのpadding設定 */
+#profile ons-list-header {
+    padding: 0 !important;
+}
+
+#profile ons-list-header .center{
+    padding: 0 !important;
+}
+
+/* リストアイテムのpadding設定 */
+#profile ons-list-item {
+    padding: 0 !important;
+}
+
+#profile ons-list-item .center{
+    padding: 0 !important;
+}
+
+
+#txt_nickname {
+    
+    /*
+    background-color: red;
+    */
+}
+
+#txt_self_introduction {
+    padding: 14px 8px 4px 4px;
+    
+    /*
+    background-color: blue;
+    */
+    
+}
+
+
+

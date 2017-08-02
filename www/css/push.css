@@ -1,0 +1,190 @@
+/* This is a CSS file */
+
+#push .push-list {
+    border-top: none;
+    background-image: none;
+}
+
+#push .push-list-item {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom:1px solid silver;
+}
+
+
+#push .push-row {
+    min-height: 100px;
+    
+    /*
+    background-color: #ccc;
+    */
+}
+
+#push .push-left {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    
+    /*
+    background-color: black;
+    */
+    
+    /*padding: 10px 10px 10px 0;*/
+}
+
+#push .push-center {
+    background-color: black;
+    opacity: 0.5;
+}
+
+#push .push-right {
+    padding: 0;
+    margin: 0;
+  /*padding: 8px 40px 8px 10px;*/
+}
+
+#push .shop-info {
+    
+    position: absolute;
+    top: 30%;
+    
+    width: 100%;
+    height: auto;
+    
+    /*
+    background-color: #999;
+    */
+}
+
+#push .shop-nmj {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4px;
+    
+    font-weight: 500;
+    text-align: center;
+    
+    opacity: 0.8;
+  
+    /* デバッグ*/
+    /*
+    background-color: blue;
+    */
+    
+}
+
+#push .shop-link {
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.4;
+    
+    /* デバッグ*/
+    /*
+    background-color: yellow;
+    */
+}
+
+#push .push-btn-delete {
+    text-align: right;
+    margin: 0;
+}
+
+#push .btn-delete {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
+    /*
+    background-color: red;
+    */
+}
+
+#push .push-title {
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+#push .push-body {
+    text-align: left;
+    opacity: 0.8;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+#push .push-img {
+    width: 100%;
+}
+
+#push ons-list-item {
+    padding: 0 !important;
+}
+
+/* list内のpadding設定 */
+#push ons-list-item .center {
+    padding: 0 !important;
+}
+
+/*
+#push ons-list-item .center {
+    padding: 14px 0 14px 0 !important;
+}
+*/
+
+
+
+
+
+
+
+/* ここから */
+/*
+
+#push .text-input__container{
+    height:100%;
+}
+
+#push .push_wrap{
+    line-height: 1;
+    margin-top: 0px;
+    padding: 0;
+}
+
+#push .plan-list {
+    border-top: none;
+}
+
+#push .plan-left {
+    text-align: right;
+    padding: 0;
+}
+
+#push .plan-right {
+    padding: 0;
+}
+
+#push ons-list-item{
+    margin: 0;
+    padding: 0;
+    align-items:stretch;
+
+}
+
+#push ons-list-item ons-row{
+    width: 100%;
+    
+
+}
+
+
+
+.fixbtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    padding: 10px;
+}
+
+*/

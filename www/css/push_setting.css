@@ -1,0 +1,18 @@
+/* リストヘッダのpadding設定 */
+#push_setting ons-list-header {
+    padding: 0 !important;
+}
+
+#push_setting ons-list-header .center{
+    padding: 0 !important;
+}
+
+/* list内のpadding設定 */
+
+#push_setting ons-list-item {
+    padding: 0 !important;
+}
+
+#push_setting ons-list-item .center {
+    padding: 0 !important;
+}

@@ -1,0 +1,70 @@
+<ons-page id="post_add_edit">
+
+    <!-- ヘッダ -->
+    <ons-toolbar>
+        <div class="right">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          新規投稿
+        </div>
+    </ons-toolbar>
+    
+    <!-- ボディ -->
+    
+    <ons-list>
+        <ons-list-header class="photo">
+            <span class="list_title">写真</span>
+            <span class="message">6MB以下のJPEG 5枚まで</span>
+            <span class="error" hidden>写真を1～5枚選択してください</span>
+        </ons-list-header>
+        <ons-list-item>
+            <!-- ボタン -->
+            <div class="image_button">
+                <ons-button modifier="cta" onclick="getPhotoByCamera()" style="margin:5px;">
+                    <ons-icon icon="camera"></ons-icon>
+                </ons-button>
+                <ons-button modifier="cta" onclick="getPhotoByAlbum()" style="margin:5px;">
+                    <ons-icon icon="photo"></ons-icon>
+                </ons-button>
+            </div>
+            <!-- 画像表示部 -->
+            <div class="image_view">
+            </div>
+        </ons-list-item>
+        <ons-list-header class="comment">
+            <span class="list_title">コメント</span>
+            <span class="message"></span>
+            <span class="error" hidden></span>
+        </ons-list-header>
+        <ons-list-item class="comment">
+            <textarea class="textarea" style="width:100%;height:100px;"></textarea>
+        </ons-list-item>
+        <ons-list-header class="category">
+            <span class="list_title">カテゴリ</span>
+            <span class="message"></span>
+            <span class="error" hidden>選択してください</span>
+        </ons-list-header>
+        <ons-list-item class="category">
+            <ons-select id="category">
+              </ons-select>
+        </ons-list-item>
+        <ons-list-header class="tdf">
+            <span class="list_title">地域</span>
+            <span class="message"></span>
+            <span class="error" hidden>選択してください</span>
+        </ons-list-header>
+        <ons-list-item class="tdf">
+            <ons-select id="tdf">
+             </ons-select>
+        </ons-list-item>
+        <!-- 投稿ボタン -->
+        <div style="text-align: center;padding:10px 0;">
+            <ons-button modifier="cta" id="upload">
+                投稿する
+            </ons-button>
+        </div>
+    </ons-list>
+</ons-page>

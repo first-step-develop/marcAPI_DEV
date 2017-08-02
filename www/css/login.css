@@ -1,0 +1,33 @@
+/* This is a CSS file */
+
+body,p,form,input{margin: 0}
+#form{
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #000;
+}
+ 
+form p{
+    font-size: 14px;
+}
+
+.login-user-id {
+    margin-bottom: 20px;
+}
+ 
+.login-password {
+    margin-bottom: 20px;
+}
+ 
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 4px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.login-submit {
+    text-align: center;
+}

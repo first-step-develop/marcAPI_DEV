@@ -1,0 +1,140 @@
+/* This is a CSS file */
+#post .text-input__container{
+    height:100%;
+}
+#post .text-input{
+    width:90%;
+    height: 100%;
+    line-height: 100%;
+}
+#post .post_wrap{
+    border-bottom:1px solid silver;
+}
+#post .header{
+    width: 100%;
+    height:65px;
+    position: absolute;
+    z-index:10000;
+}
+#post .toolbar + .page__background + .page__content{
+    top: 121px;
+}
+#post .toolbar--material + .page__background + .page__content{
+    top: 121px;
+}
+#post .toolbar + .page__background + .page__content + .header{
+    top: 56px;
+}
+#post .toolbar--material + .page__background + .page__content + .header {
+    top: 56px;
+}
+#post .page__content .header{
+    display: none;
+}
+#post .tab_wrap{
+    display: flex;
+    width:100%;
+}
+#post .tab{
+    flex:1;
+    box-sizing: border-box;
+    text-align: center;
+    height:34px;
+    line-height: 34px;
+    background: grey;
+    color:silver;
+    border:solid 1px silver;
+}
+#post .tab.selected{
+    background: white;
+    color:black;
+}
+#post ons-list-item div{
+    width: 100%;
+}
+#post ons-carousel{
+    height:150px;
+}
+#post .photo-wrap{
+    margin:0;
+    height:150px;
+}
+#post .post-text-wrap{
+    width:100%;
+    background-color:white;
+    word-wrap: break-word;
+}
+#post .post-text-wrap .author{
+    font-size:12px;
+    width:100%;
+    word-wrap: break-word;
+    margin:0;    
+}
+#post .post-text-wrap .category{
+    font-size:12px;
+    width:100%;
+    word-wrap: break-word;
+    margin:0;     
+}
+#post .post-text-wrap .tdf{
+    font-size:12px;
+    width:100%;
+    word-wrap: break-word;
+    margin:0;     
+}
+#post .post-text-wrap .comment{
+    width:100%;
+    word-wrap: break-word;
+    padding:1em 0;
+    margin:0;
+}
+#post .post-footer{
+    background-color:white;
+    width:100%;
+}
+#post .post-footer .like{
+    position:relative;
+    left:0;
+    padding-left:5px;
+}
+#post .post-footer .operation{
+    position:absolute;
+    right:0;
+}
+#post .post-footer .button{
+    text-align:center;
+    padding:0;
+    margin:0;
+}
+#post .post-footer .button .text{
+    padding-right:5px;
+}
+#post #post_isempty{
+    width:100%;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    background:white;
+    color:grey;
+}
+#post #post_next,#post #post_next_loading{
+    width:100%;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    background:white;
+    color:grey;
+    border-top:solid 1px silver; 
+}
+#post ons-list-item{
+  padding: 0 !important;
+}
+#post ons-list-item .center{
+  padding: 14px 0 14px 0 !important;
+}
+#post .reload{
+    width: 100%;
+    text-align: center;
+    position:absolute;
+    top:40%;
+}

@@ -1,0 +1,53 @@
+<ons-page id="login">
+
+    <!-- ヘッダ -->
+    <ons-toolbar>
+        <div class="center">
+          ログイン
+        </div>
+    </ons-toolbar>
+    
+    <!-- ボディ -->
+    <div id="form">
+        
+        <!-- 会員ID -->
+        <div class="member_id">
+            <p>
+                <span class="p_title">会員ID</span>
+                <span class="error" hidden>会員IDを入力してください</span>
+            </p>
+            <p class="login-user-id">
+            <input type="text" name="user_id" id="userid" maxlength="32" autocomplete="OFF" />
+            </p>
+        </div>
+        
+        <!-- パスワード -->
+        <div class="password">
+            <p>
+                <span class="p_title">パスワード</span>
+                <span class="error" hidden>パスワードを入力してください</span>
+            </p>
+            <p class="login-password">
+                <input type="password" name="password" id="password" maxlength="32" autocomplete="OFF" />
+            </p>
+        </div>
+        
+        <!-- ログインボタン -->
+        <p class="login-submit">
+            <ons-button modifier="cta" onClick="login()">
+                ログイン
+            </ons-button>
+        </p>
+        
+        <!-- リンク -->
+        <p>
+            まだ会員でない方は
+            <a href="#" onclick="gotoWebRegister();">こちら</a>
+            から登録
+        </p>
+        
+        <!-- 初回ログインテスト用 -->
+        <!-- <p class="login-submit"><ons-button modifier="cta" onClick="testlogin()">installation登録</ons-button></p> -->
+        
+    </div>
+</ons-page>

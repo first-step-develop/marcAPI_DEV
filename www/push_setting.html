@@ -1,0 +1,65 @@
+
+<ons-page id="push_setting">
+
+    <!-- ヘッダ -->
+    <ons-toolbar>
+        <div class="right">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+            プッシュ通知設定
+        </div>
+    </ons-toolbar>
+    
+    <!-- ボディ -->
+    
+    <div id="push_setting_template" hidden>
+    
+    <ons-list>
+        <ons-list-header></ons-list-header>
+        <ons-list-item>
+            <div class="center">通知を許可</div>
+            <div class="right">
+                <ons-switch id="switch_allow_push"></ons-switch>
+            </div>
+            
+        </ons-list-item>
+        
+        <ons-list-header id="push_type_header">受信する通知の種類</ons-list-header>
+        
+        <!-- ここから -->
+        
+        <ons-list-item id="push_type_body">
+            <div class="center">キャンペーン</div>
+            <div class="right">
+                <ons-switch id="switch_campaign"></ons-switch>
+            </div>
+        </ons-list-item>
+        
+        <!-- ここまで -->
+        
+        <ons-list-header></ons-list-header>
+        
+        <ons-list-item>
+            <ons-button modifier="large" onclick="changePush()">
+                変更する
+            </ons-button>
+        </ons-list-item>
+        <ons-list-header>受信端末の設定</ons-list-header>
+        <ons-list-item>
+            <ons-button modifier="large" onclick="changeDevice()">
+                プッシュ通知の受信端末を変更する
+            </ons-button>
+        </ons-list-item>
+    </ons-list>
+    
+    </div>
+    
+</ons-page>
+
+
+
+
+

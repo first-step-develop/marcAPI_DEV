@@ -1,0 +1,97 @@
+<ons-page id="profile">
+
+    <!-- ヘッダ -->
+    <ons-toolbar>
+        <div class="right">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          プロフィール
+        </div>
+    </ons-toolbar>
+    
+    <!-- ボディ -->
+    
+    <div>
+    
+    <ons-list>
+        <!-- ニックネーム -->
+        <ons-list-header class="nickname">
+            <span class="list_title">名前（ニックネーム）</span>
+            <span class="message"></span>
+            <span class="error" hidden></span>
+        </ons-list-header>
+        
+        <ons-list-item class="nickname">
+            <input type="text" class="text-input text-input--transparent" id="txt_nickname" style="width: 100%">
+        </ons-list-item>
+        
+        <!-- 自己紹介 -->
+        <ons-list-header class="self_introduvtion">
+            <span class="list_title">自己紹介</span>
+            <span class="message"></span>
+            <span class="error" hidden></span>
+        </ons-list-header>
+        
+        <ons-list-item class="self_introduvtion">
+            <textarea class="text-input--transparent" id="txt_self_introduction" style="width:100%;height:100px;"></textarea>
+        </ons-list-item>
+        
+        <!-- 変更ボタン -->
+        <ons-list-header></ons-list-header>
+        
+        <ons-list-item class="self_introduvtion">
+        <div class="center">
+            <ons-button modifier="large" onclick="edit_profile()">
+                変更
+            </ons-button>
+        </div>
+        </ons-list-item>
+        
+    </ons-list>
+    
+    </div>
+    
+    
+
+<!-- 
+    <div hidden>
+        
+    <div class="settings-header">
+        <span class="list_title">名前（ニックネーム）</span>
+        <span class="message"></span>
+        <span class="error" hidden></span>
+    </div>
+    
+    <ons-list modifier="inset" class="settings-list">
+        <ons-list-item class="nickname">
+            <input type="text" class="text-input--transparent" id="txt_nickname" style="desplay: block; width: 100%; ">
+        </ons-list-item>
+    </ons-list>
+    
+    <div class="settings-header">
+        <span class="list_title">自己紹介</span>
+        <span class="message"></span>
+        <span class="error" hidden></span>
+    </div>
+    
+    <ons-list modifier="inset" class="settings-list">
+        <ons-list-item class="self_introduvtion">
+            <textarea class="text-input--transparent" id="txt_self_introduction" style="width:100%;height:100px;"></textarea>
+        </ons-list-item>
+    </ons-list>
+    
+    <br>
+    
+    <ons-list modifier="inset" class="settings-list">
+        <ons-list-item modifier="tappable" >
+            変更
+        </ons-list-item>
+    </ons-list>
+
+    </div>
+-->    
+    
+</ons-page>
