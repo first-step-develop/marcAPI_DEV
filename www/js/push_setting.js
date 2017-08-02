@@ -57,16 +57,26 @@ function showPushSettings(response) {
     } else {
         // 1のとき：ON
         document.getElementById('switch_allow_push').checked = true;
+        $('#push_type_header').hide();
+        $('#push_type_body').hide();
+
     }
     
-    // キャンペーン
-    if(campaignReceptFlg == 0) {
-        // 0のとき：OFF
-        document.getElementById('switch_campaign').checked = false;
-    } else {
-        // 1のとき：ON
-        document.getElementById('switch_campaign').checked = true;
-    }
+    
+        // キャンペーン
+        if(campaignReceptFlg == 0) {
+            // 0のとき：OFF
+            document.getElementById('switch_campaign').checked = false;
+            $('#push_type_header').hide();
+            $('#push_type_body').hide();
+        } else {
+            // 1のとき：ON
+            document.getElementById('switch_campaign').checked = true;
+            $('#push_type_header').hide();
+            $('#push_type_body').hide();
+            }
+    
+
     
     // 通知許可スイッチにイベントリスナー追加
     document.getElementById('switch_allow_push')
@@ -221,13 +231,16 @@ function getPushTypeRowStatus() {
     if(allowPushFlg.checked) {
         
         // 通知許可フラグON：通知種別行の表示
-        $('#push_type_header').show();
-        $('#push_type_body').show();
+        document.getElementById('switch_campaign').checked = true;
+        $('#push_type_header').hide();
+        $('#push_type_body').hide();
+
     } else {
         
         // 通知許可フラグOFF：通知種別行の非表示
+        document.getElementById('switch_campaign').checked = false;
         $('#push_type_header').hide();
-        $('#push_type_body').hide();   
+        $('#push_type_body').hide();
     }
 }
 
